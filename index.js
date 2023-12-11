@@ -1,6 +1,6 @@
 import express from "express";
-import { simpleRandom } from "./src/utils/simpleRandom.js";
-import { pokemons } from "./src/data/pokemons.js";
+import { simpleRandom } from "./back/src/utils/simpleRandom.js";
+import { pokemons } from "./back/src/data/pokemons.js";
 import 'dotenv/config';
 
 const port = process.env.PORT;
