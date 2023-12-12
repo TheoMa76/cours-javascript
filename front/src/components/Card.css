@@ -1,0 +1,7 @@
+.card-container {
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.card-container:hover {
+    transform: scale(1.1);
+}
