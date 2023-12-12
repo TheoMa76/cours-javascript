@@ -39,6 +39,7 @@ function Pokemons() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-indigo-800 to-purple-900">
       <div className="text-center mt-16">
+        <div className='flex flex-col w-1/2 justify-center mx-auto'>
         <h1 className="text-4xl text-white font-bold mx-auto">Pokedex</h1>
         <input
           type="text"
@@ -53,6 +54,7 @@ function Pokemons() {
         >
           Rechercher
         </button>
+        </div>
         {pokemonData && Array.isArray(pokemonData.pokemons) ? (
         <div className="flex flex-wrap justify-center">
           {console.log(pokemonData)}

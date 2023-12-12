@@ -17,6 +17,11 @@
       "type": "image/png",
       "sizes": "512x512"
     }
+    {
+      "src": "pokeball.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
   ],
   "start_url": ".",
   "display": "standalone",
