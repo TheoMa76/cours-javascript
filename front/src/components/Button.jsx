@@ -1,12 +1,22 @@
-import React from 'react'
+import React from 'react';
+import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Pokemons from '../pages/Pokemons';
 
 function Button() {
-
-  const variable = "monsuperbouton"
+  const pathPokemon = '/pokemon';
 
   return (
-    <button>{variable}</button>
-  )
+    <>
+      <button className="relative font-semibold overflow-hidden w-32">
+        <Link to={pathPokemon} className="text-white no-underline z-10 relative">
+          Pokemons
+        </Link>
+      </button>
+      <Routes>
+        <Route path={pathPokemon} element={<Pokemons />} />
+      </Routes>
+      </>
+  );
 }
 
-export default Button
+export default Button;
